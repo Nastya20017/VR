@@ -308,6 +308,7 @@ GameObject:
   - component: {fileID: 922107690}
   - component: {fileID: 922107692}
   - component: {fileID: 922107691}
+  - component: {fileID: 922107693}
   m_Layer: 5
   m_Name: Text (Legacy)
   m_TagString: Untagged
@@ -368,7 +369,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0417\u0430\u0434\u0430\u043D\u0438\u0435 1"
+  m_Text: 
 --- !u!222 &922107692
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -377,6 +378,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922107689}
   m_CullTransparentMesh: 1
+--- !u!114 &922107693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922107689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6ec297c18c337439a8365a0e771f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &926241278
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,9 +474,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 966853602}
+      - m_Target: {fileID: 922107693}
         m_TargetAssemblyTypeName: ButtonLogic, Assembly-CSharp
-        m_MethodName: Test
+        m_MethodName: Test2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -609,6 +622,7 @@ GameObject:
   - component: {fileID: 966853599}
   - component: {fileID: 966853598}
   - component: {fileID: 966853602}
+  - component: {fileID: 966853603}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -706,6 +720,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6ec297c18c337439a8365a0e771f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &966853603
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966853597}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1128254020
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +748,8 @@ GameObject:
   - component: {fileID: 1128254023}
   - component: {fileID: 1128254022}
   - component: {fileID: 1128254021}
+  - component: {fileID: 1128254025}
+  - component: {fileID: 1128254026}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -804,6 +836,35 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1128254025
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128254020}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1128254026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1128254020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86c3daff30e6d943a53e0cab217bcef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 922107691}
 --- !u!1 &1196024876
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,6 +1047,7 @@ GameObject:
   - component: {fileID: 1781976268}
   - component: {fileID: 1781976267}
   - component: {fileID: 1781976266}
+  - component: {fileID: 1781976270}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -1072,3 +1134,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1781976270
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781976265}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

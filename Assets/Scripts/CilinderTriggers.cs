@@ -3,30 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonLogic : MonoBehaviour
+public class CilinderTriggers : MonoBehaviour
 {
+    public Text Text;
     int yy = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
-    public void Test()
+    private void OnCollisionEnter(Collision collision)
     {
-        this.gameObject.SetActive(!this.gameObject.activeSelf);
-    }
-
-    public void Test2()
-    {
-        var ttt = this.gameObject.GetComponent<Text>();
-        ttt.text = (yy++).ToString();
+        yy++;
+        Text.text = yy.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
